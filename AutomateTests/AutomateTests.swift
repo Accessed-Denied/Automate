@@ -22,6 +22,9 @@ class AutomateTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    func testWorkflow(){
+        XCTAssertEqual(10 > 5, 100>10, "Oh Yes they are same!")
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
