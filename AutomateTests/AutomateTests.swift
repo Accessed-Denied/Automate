@@ -23,7 +23,7 @@ class AutomateTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     func testWorkflow(){
-        XCTAssertEqual(10 > 5, 100>10, "Oh Yes they are same!")
+        XCTAssertEqual(10 > 5, 100>10, "Oh Yes they are same!!")
     }
 
     func testPerformanceExample() throws {
