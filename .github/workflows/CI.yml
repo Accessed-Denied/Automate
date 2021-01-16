@@ -10,8 +10,13 @@ on:
     branches:
       - main
 jobs:
-  Build:
+  Test:
     runs-on: macOS-latest
     steps:
-    - name: Dump file hierarchy
-      run: ls -R
+    - uses: actions/checkout@v1
+    - name: List available Xcode versions
+      run: ls/Applications | grep Xcode
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_12.3.app && /usr/bin/xcodebuild -version
+    - name: Run unit tests
+      run: xcodebuild test -scheme Automate -project Automate/Automate.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.3' | xcpretty && exit ${PIPESTATUS[0]}
